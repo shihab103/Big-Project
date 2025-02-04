@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Project</title>
-</head>
-<body>
-    
-</body>
+    <!-- link daisyUI + Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <style>
+      body {
+        font-family: "Space Grotesk", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation section -->
+    <section class="md:container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+              <li><a>About us</a></li>
+              <li><a>Services</a></li>
+              <li><a>Use Cases</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Blog</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">Positivus</a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 items-center">
+              <li><a>About us</a></li>
+              <li><a>Services</a></li>
+              <li><a>Use Cases</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Blog</a></li>
+              <li><button class="btn btn-outline">Request a quote</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </body>
 </html>
